@@ -1,0 +1,53 @@
+/* service.css */
+#servicetitle{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #02f2ff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styles */
+#service-title {
+    text-align: center;
+    color: #333;
+}
+
+/* Service description styles */
+.service-description {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 80px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service-description h2 {
+    color: #007bff;
+}
+
+.service-description p {
+    line-height: 1.6;
+}
+
+.service-description a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.service-description a:hover {
+    text-decoration: underline;
+}

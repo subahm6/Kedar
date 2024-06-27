@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>KEDAR</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mian.css') }}">
+</head>
+<body>
+    <div id="buttons">
+        <button id="button1">ABOUT</button>
+        <button id="button2">CONTACT US</button>
+        <button id="button3">LOGIN</button>
+        <button id="button4">SERVICES</button>
+    </div>
+
+    <div id="mainbody">
+        <h1 id="title">KEDAR ABETTOR</h1>
+    </div>
+   
+    <div id="paragraph">
+        <p id="para">
+            Kedar Abettor is a pioneering company dedicated to revolutionizing the transportation and logistics industry in the region. With a commitment to excellence and innovation, Kedar Abettor provides comprehensive solutions that streamline and optimize the movement of goods, ensuring efficiency and reliability.
+            Our services are designed to meet the diverse needs of businesses, from small enterprises to large corporations. We leverage advanced technology and industry expertise to offer customized logistics solutions that enhance supply chain operations. Our team of experienced professionals works tirelessly to deliver superior service, ensuring that our clients' goods are transported safely, swiftly, and cost-effectively.
+            At Kedar Abettor, we understand the critical role that logistics plays in the success of businesses. Our goal is to be the trusted partner that helps our clients overcome their logistical challenges, improve operational efficiency, and achieve their business objectives. Whether it's through innovative transportation management systems, real-time tracking, or optimized routing, we are committed to driving growth and enhancing the competitiveness of our clients in the marketplace.
+            Choose Kedar Abettor for reliable, efficient, and forward-thinking logistics solutions that propel your business forward.
+        </p>
+    </div>
+
+   
+
+    <script>
+        document.getElementById('button3').addEventListener('click', function() {
+            window.location.href = "{{ url_for('login_page') }}";
+        });
+    </script>
+
+    <script>
+    document.getElementById('button2').addEventListener('click', function() {
+        window.location.href = "{{ url_for('contact_page') }}";
+    });
+    </script>
+
+    <script>
+    document.getElementById('button4').addEventListener('click', function() {
+        window.location.href = "{{ url_for('service_page') }}";
+    });
+    </script>
+</body>
+</html>
